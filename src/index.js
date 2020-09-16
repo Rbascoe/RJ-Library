@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { getBooks } from './data/books.js';
+import { getBooks } from './components/books.js';
 
 ReactDOM.render(
  <App />,

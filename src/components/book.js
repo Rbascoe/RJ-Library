@@ -6,11 +6,11 @@ class Book extends React.Component{
         console.log(props)
       }
 
-      
+
     render(){
         return (
             <div>
-                <p>{this.props.title}</p>
+                <p>{this.title}</p>
             </div>
 
         )

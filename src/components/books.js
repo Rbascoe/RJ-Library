@@ -31,4 +31,4 @@ const allBooks = [
     }
 ];
 
-    export const getBooks = () => allBooks;
+    export default allBooks;
