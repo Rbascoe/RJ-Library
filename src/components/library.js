@@ -1,37 +1,33 @@
-import React from 'react';
-
-import allBooks from './books.js';
-
+import React, { Component } from 'react'
+import getBooks  from './books.js';
 import Book from './book.js';
 
 
-
-class Library extends React.Component{
+export default class Library extends React.Component {
 
     constructor(){
         console.log(allBooks)
         super()
-
         this.state = {
-          title: this.title,
-          author: this.author,
           isRead: false
-    
         }
       }
+    
+    renderAllBooks = () => {
+        return getBooks.map(book => {
+          return <Book title={book.title} 
+                        author={book.author}
+                        isRead={this.state.isRead}
+                        image={book.image} />
+        })
+    }
 
-
-    render(){
+    render() {
         return (
             <div>
-                <p>{allBooks.map(book => book.title)}</p>
-                <Book title={this.state.title}/>
+               {this.renderAllBooks()}
             </div>
-
         )
     }
 }
 
-
-
-export default Library;

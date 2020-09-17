@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+<<<<<<< HEAD
 import { getBooks } from './components/books.js';
+=======
+>>>>>>> Jina
 
 ReactDOM.render(
  <App />,
